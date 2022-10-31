@@ -8,24 +8,59 @@ layout: layout-example.njk
 {{ govukSummaryList({
   header: {
     title: {
-      text: "University of Gloucestershire"
+      text: "Lead tenant"
     }
   },
   rows: [
     {
       key: {
-        text: "Course"
+        text: "Age"
       },
       value: {
-        html: "English (3DMD)<br>PGCE with QTS full time"
+        html: "38"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "age"
+          }
+        ]
       }
     },
     {
       key: {
-        text: "Location"
+        text: "Nationality"
       },
       value: {
-        html: "School name<br>Road, City, SW1 1AA"
+        html: "UK national resident in UK"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "nationality"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Working situation"
+      },
+      value: {
+        html: "Part time – less than 30 hours a week"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "working situation"
+          }
+        ]
       }
     }
   ]
@@ -34,24 +69,154 @@ layout: layout-example.njk
 {{ govukSummaryList({
   header: {
     title: {
-      text: "University of Bristol"
+      text: "Person 2"
     }
   },
   rows: [
     {
       key: {
-        text: "Course"
+        text: "Details known"
       },
       value: {
-        html: "English (Q3X1)<br>PGCE with QTS full time"
+        html: "Yes"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "whether details are known"
+          }
+        ]
       }
     },
     {
       key: {
-        text: "Location"
+        text: "Relationship to lead tenant"
       },
       value: {
-        html: "School name<br>Road, City, SW2 1AA"
+        html: "Partner"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "relationship to lead tenant"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Age"
+      },
+      value: {
+        html: "42"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "age"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Working situation"
+      },
+      value: {
+        html: "Unable to work because of long-term sickness or disability"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "working situation"
+          }
+        ]
+      }
+    }
+  ]
+}) }}
+
+{{ govukSummaryList({
+  header: {
+    title: {
+      text: "Person 3"
+    }
+  },
+  rows: [
+    {
+      key: {
+        text: "Details known"
+      },
+      value: {
+        html: "Yes"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "whether details are known"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Relationship to lead tenant"
+      },
+      value: {
+        html: "Child"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "relationship to lead tenant"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Age"
+      },
+      value: {
+        html: "7"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "age"
+          }
+        ]
+      }
+    },
+    {
+      key: {
+        text: "Working situation"
+      },
+      value: {
+        html: "Child under 16"
+      },
+      actions: {
+        items: [
+          {
+            href: "#",
+            text: "Change",
+            visuallyHiddenText: "working situation"
+          }
+        ]
       }
     }
   ]

@@ -19,6 +19,8 @@ Use the summary list component to present pairs of related information, known as
 
 You can use it to display metadata like ‘Last updated’ with a date like ‘22 June 2018’, or to summarise a user’s responses at the end of a form like the [check answers](/patterns/check-answers/) pattern.
 
+You can use [summary cards](#summary-cards) if you need to show multiple summary lists of the same type, or apply actions to a whole list.
+
 ## When not to use this component
 
 The summary list uses the description list (`<dl>`) HTML element, so only use it to present information that has a key and at least one value.
@@ -64,14 +66,14 @@ To remove borders on a single row, use the `govuk-summary-list__row--no-border` 
 If you’re showing multiple summary lists on a page, you can show each list within a summary card. This lets you visually separate them and give each list a title and some actions.
 
 Use summary cards when you need to show: 
-- multiple summary lists that are of the same type, for example a set of applications
+- multiple summary lists of the same type, for example a set of applications
 - actions that will apply to all the items in a list
 
 Do not use summary cards if you only need to show a small amount of related information. Use summary lists instead, and structure them with headings if needed.
 
 If you’re showing summary cards at the end of a longer journey, you might want to familiarise the user with them earlier on — such as when the user reviews individual sections.
 
-### Summary card with a title
+### With a title
 
 Use the summary card’s header to give each summary list a title.
 
@@ -81,7 +83,7 @@ A title can simply be made up of one or two important values in the summary list
 
 {{ example({group: "components", item: "summary-list", example: "card-with-title", html: true, nunjucks: true, open: false}) }}
 
-### Summary card with a title and actions
+### With a title and actions
 
 You can also add action links in the header. These should be actions that apply to all values in the summary list, such as ‘Delete’, ‘Edit’ or ‘Update status’. 
 
