@@ -15,11 +15,13 @@ Use the summary list to summarise information, for example, a user’s responses
 
 ## When to use this component
 
-Use the summary list component to present pairs of related information, known as key-value pairs, in a list. The key is a description or label of a piece of information, like ‘Name’, and the value is the piece of information itself, like ‘John Smith’.
+The summary list describes a thing, such as a person, by listing some of their relevant characteristics.
+
+Each characteristic is a line on the list, shown as a ‘key-value pair’. The key is a label that describes the type of characteristic, such as ‘Name’. The value is the characteristic itself, such as ‘John Smith’.
 
 You can use it to display metadata like ‘Last updated’ with a date like ‘22 June 2018’, or to summarise a user’s responses at the end of a form like the [check answers](/patterns/check-answers/) pattern.
 
-You can use [summary cards](#summary-cards) if you need to show multiple summary lists of the same type, or apply actions to a whole list.
+You can use [summary cards](#summary-cards) to show multiple summary lists that repeat the same set of keys. You can also use summary cards if you need to provide the user with an action that applies to the entire list.
 
 ## When not to use this component
 
@@ -65,9 +67,13 @@ To remove borders on a single row, use the `govuk-summary-list__row--no-border` 
 
 If you’re showing multiple summary lists on a page, you can show each list within a summary card. This lets you visually separate them and give each list a title and some actions.
 
-Use summary cards when you need to show: 
-- multiple summary lists of the same type, for example a series of interview appointments or application choices
+Use summary cards when you need to show either: 
+- multiple summary lists that repeat the same set of key labels, for example to describe a set of people or professional qualifications
 - actions that will apply to all the items in a list
+
+Summary cards are often used in case working systems, to help users quickly view information about a set of things and apply actions to them.
+
+However, summary cards may not always be appropriate for public-facing services as users might not easily understand the information the summary card is meant to show.
 
 Do not use summary cards if you only need to show a small amount of related information. Use summary lists instead, and structure them with headings if needed.
 
@@ -77,7 +83,7 @@ If you’re showing summary cards at the end of a longer journey, you might want
 
 Use the summary card’s header to give each summary list a title.
 
-Each title should be unique and help identify what the information in the summary list is meant to describe. For example, this could be a person, organisation or professional qualification.
+Each title should be unique and help identify the thing the summary list describes. For example, this could be the name of a specific person, organisation or professional qualification.
 
 A title can simply be made up of one or two important values in the summary list — such as the first and last name of a person. Try to keep titles short.
 
